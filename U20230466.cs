@@ -65,6 +65,8 @@ namespace MyApp// Note: actual namespace depends on the project name.
             //5 NUMERO = 14 MINIMO 8
             //7 NUMERO = 7 MINIMO 7
 
+            //AUTOEVALUACION 10 U20230466
+
             Console.ReadKey();
         }
     }
