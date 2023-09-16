@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace MyApp// Note: actual namespace depends on the project name.
 {
@@ -6,6 +7,8 @@ namespace MyApp// Note: actual namespace depends on the project name.
     {
          static void Main(string[] args)
         {
+
+            Console.WriteLine ("\n----------------INICIO DEL CODIGO---------------\n");
             //for //foreach
 
             //Caso simple for 
@@ -13,13 +16,13 @@ namespace MyApp// Note: actual namespace depends on the project name.
             for (int i = 0; i < 10; i++)
             {
 
-            Console.WriteLine($"El numero {i}");
+            Console.WriteLine($"El numero: {i}");
 
             } //Fin for
 
             //ELABORAR TABLA DE MULTIPLICAR DE NUMERO N
 
-            Console.WriteLine("\nIngrese un numero para elaborar su tabla de multiplicar");
+            Console.WriteLine("\nIngrese un numero para elaborar su tabla de multiplicar: ");
             int numero = Convert.ToInt32(Console.ReadLine());
 
             for( int i = 1; i <= 10; i++)
@@ -30,27 +33,29 @@ namespace MyApp// Note: actual namespace depends on the project name.
                 Console.WriteLine($"{numero} x {i} = {multiplicacion}");
             }
 
-            }
+
 
             //Foreach
 
             //Declarar una lista.
 
+
             List<int> numeros = new List<int> { 24, 10, 8, 35, 14, 7 };
 
-           int minimo = numeros[0]; //Inicializar con valor del indice 0
+            int minimo = numeros[0]; //Inicializar con valor del indice 0
 
-            foreach (int numero1 in numeros)
+                foreach (int numero1 in numeros)
             {
 
-                if(numero1 < minimo)
+                if (numero1 < minimo)
                 { 
                     minimo = numero1; //Actualizar el valor minimo
                 }
 
             }
 
-            Console.WriteLine ("El numero mas pequeño en la lista es >" + minimo);
+            Console.WriteLine ("\nEl numero mas pequeño en la lista es: " + minimo);
+            Console.WriteLine ("\n---------------FIN DEL CODIGO---------------");
 
             //VALORES POR ITERACIONES
             //1 NUMERO VALDRIA 24 MINIMO 24
